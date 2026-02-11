@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>JO.crêpe🥞 | Street Crêpes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="JO.crêpe🥞 – Crêpes street food à Dakar. Simple ou chocolat. Commande rapide via WhatsApp.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">
+        <span class="logo-jo">JO</span><span class="logo-dot">.</span><span class="logo-crepe">crêpe🥞</span>
+    </h1>
+    <p class="tagline">Street • Crêpes • No Stress</p>
+
+    <a href="https://wa.me/242066256368" target="_blank" class="btn-whatsapp">
+        📲 Commander sur WhatsApp
+    </a>
+</header>
+
+<section>
+    <h2>Le menu</h2>
+
+    <div class="catalogue">
+        <div class="card">
+            <h3>Crêpe Simple</h3>
+            <p class="desc">Classique. Calme. Efficace.</p>
+            <p class="price">100 FCFA</p>
+            <button onclick="choisirProduit('simple')">Commander</button>
+        </div>
+
+        <div class="card">
+            <h3>Crêpe Chocolat</h3>
+            <p class="desc">Fondante. Lourde. Sérieuse.</p>
+            <p class="price">150 FCFA</p>
+            <button onclick="choisirProduit('chocolat')">Commander</button>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Commander</h2>
+
+    <form onsubmit="envoyerCommande(event)">
+        <input type="text" id="nom" placeholder="Ton nom" required>
+        <input type="tel" id="telephone" placeholder="Ton numéro" required>
+
+        <select id="produit" onchange="calculerTotal()" required>
+            <option value="">Choisis ta crêpe</option>
+            <option value="simple">Crêpe Simple - 100 FCFA</option>
+            <option value="chocolat">Crêpe Chocolat - 150 FCFA</option>
+        </select>
+
+        <input type="number" id="quantite" min="1" value="1" onchange="calculerTotal()" required>
+
+        <p class="total">Total : <span id="total">0</span> FCFA</p>
+
+        <button type="submit">Valider la commande</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 JO.crêpe🥞 — Street Food
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
