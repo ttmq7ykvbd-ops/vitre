@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(
+        to bottom ,
+        #e5c97a ,
+        #bfa260 ,
+        #8a6b2e 
+    );
+    margin: 0;
+    min-height: 100vh;
+}
+h1 {
+    color: #333;
+}
+P {
+    font-size: 18px;
+    color: #555;
+
+}
+img {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #f8c705;
+    color: rgb(0, 0, 0);
+    text-decoration: nome;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+/*Animation d'apparition*/
+body {
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.projets {
+    margin-top: 60px;
+}
+.projects h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 300px;
+}
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    border: 3px solid rgb(12, 12, 12);
+}
