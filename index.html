@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon lecteur</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(to bottom, #0f3c68, #021d33);
+}
+
+.lecteur{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    width:350px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.lecteur h2{
+    margin-bottom:15px;
+}
+
+.lecteur img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+audio{
+    width:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="lecteur">
+        <h2>Lecteur Naruto Shippuden</h2>
+
+        <!-- Image Naruto -->
+        <img src="naruto-shippuden.jpg" alt="Naruto Shippuden">
+
+        <!-- Audio -->
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+
+    </div>
+</div>
+
+</body>
+</html>
